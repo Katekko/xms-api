@@ -7,9 +7,10 @@ part 'mundo.data.g.dart';
 
 @JsonSerializable()
 class MundoData {
+  String nome;
   List<EpisodioData> episodios;
 
-  MundoData({@required this.episodios});
+  MundoData({@required this.episodios, @required this.nome});
 
   factory MundoData.fromJson(Map<String, dynamic> json) =>
       _$MundoDataFromJson(json);

@@ -1,5 +1,7 @@
 import 'package:api_ekko/home.endpoint.dart';
+import 'package:api_ekko/infrastructure/navigation/bindings/controllers/get_mapa_desafio_aluno.controller.binding.dart';
 import 'package:api_ekko/presentation/endpoints.dart';
+import 'package:api_ekko/presentation/endpoints/turma/get_mapa_desafio_by_aluno/get_mapa_desafio_by_aluno.endpoint.dart';
 import 'package:get_server/get_server.dart';
 
 import 'bindings/controllers/controllers_bindings.dart';
@@ -131,6 +133,12 @@ class Nav {
       method: Method.put,
       page: () => AtualizarGameTurmaEndpoint(),
       binding: AtualizarGameTurmaControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.GET_MAPA_DESAFIO_BY_ALUNO,
+      method: Method.get,
+      page: () => GetMapaDesafioByAlunoEndpoint(),
+      binding: GetMapaDesafioByAlunoControllerBinding(),
     ),
   ];
 }

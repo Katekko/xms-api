@@ -20,6 +20,7 @@ class Routes {
   static const GET_TAREFAS = '/api/tarefa';
   static const GET_TODOS_ALUNOS = '/api/turma/alunos';
   static const GET_TURMAS = '/api/turma';
+  static const GET_MAPA_DESAFIO_BY_ALUNO = '/api/turma/aluno/:id/mapa-desafios';
   static const HOME = '/';
   static const POST_ARQUIVAR_MENSAGEM = '/api/usuario/mensagem/arquivar';
   static const POST_FALE_CONOSCO = '/api/usuario/mensagem-fale-conosco/enviar';
